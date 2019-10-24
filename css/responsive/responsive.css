@@ -185,10 +185,10 @@
     }
     .navbar .container .navbar-header {
         position: relative;
-        margin: 0;
+        margin: 0;display: inline-table;
     }
     .navbar .container .navbar-header .navbar-toggle {
-        display: block;
+        /*display: block;*/
         border-radius: 0;
         background: #4aa3df;
         border: none;
@@ -270,7 +270,7 @@
         padding: 13px 20px;
     }
     .navbar.navbar-fixed-top .container .navbar-header .navbar-brand {
-        display: none;
+        /* display: none; */padding-left: 20px;
     }
     .navbar.navbar-fixed-top .container .navbar-nav li a {
         line-height: 50px;

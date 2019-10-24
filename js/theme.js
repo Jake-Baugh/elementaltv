@@ -7,15 +7,15 @@
         /*----------------------------------------------------*/
         /*  Navigation Scroll
         /*----------------------------------------------------*/
-        $(window).scroll(function() {    
+        /*$(window).scroll(function() {    
             var scroll = $(window).scrollTop();
             var window_width = $(window).width();
-            if (scroll >= 300 ) {
+            if (scroll >= 100 ) {
                 $(".navbar").addClass("navbar-fixed-top");
             } else {
                 $(".navbar").removeClass("navbar-fixed-top");
             }
-        });
+        });*/
         
         /*----------------------------------------------------*/
         /*  Post display
@@ -94,6 +94,73 @@
                 $('.category_filter .btn').removeClass('active');
             }
         });
+
+        $('.dropdown-menu .filterType2').on('click',function(){
+            $('.video_post').removeClass('hidden');
+            if( $(this).hasClass('active') ){}
+            else{
+                $('.video_post.filterType2').addClass('hidden')
+            }
+        }); 
+        $('.dropdown-menu .filterType3').on('click',function(){
+            $('.video_post').removeClass('hidden');
+            if( $(this).hasClass('active') ){}
+            else{
+                $('.video_post.filterType3').addClass('hidden')
+            }
+        }); 
+        $('.dropdown-menu .filterType4').on('click',function(){
+            $('.video_post').removeClass('hidden');
+            if( $(this).hasClass('active') ){}
+            else{
+                $('.video_post.filterType4').addClass('hidden')
+            }
+        }); 
+        $('.dropdown-menu .filterType5').on('click',function(){
+            $('.video_post').removeClass('hidden');
+            if( $(this).hasClass('active') ){}
+            else{
+                $('.video_post.filterType5').addClass('hidden')
+            }
+        }); 
+        $('.dropdown-menu .filterType6').on('click',function(){
+            $('.video_post').removeClass('hidden');
+            if( $(this).hasClass('active') ){}
+            else{
+                $('.video_post.filterType6').addClass('hidden')
+            }
+        }); 
+        $('.dropdown-menu .filterType7').on('click',function(){
+            $('.video_post').removeClass('hidden');
+            if( $(this).hasClass('active') ){}
+            else{
+                $('.video_post.filterType7').addClass('hidden')
+            }
+        }); 
+        $('.dropdown-menu .filterType8').on('click',function(){
+            $('.video_post').removeClass('hidden');
+            if( $(this).hasClass('active') ){}
+            else{
+                $('.video_post.filterType8').addClass('hidden')
+            }
+        }); 
+        $('.dropdown-menu .filterType9').on('click',function(){
+            $('.video_post').removeClass('hidden');
+            if( $(this).hasClass('active') ){}
+            else{
+                $('.video_post.filterType9').addClass('hidden')
+            }
+        }); 
+        $('.dropdown-menu .filterType10').on('click',function(){
+            $('.video_post').removeClass('hidden');
+            if( $(this).hasClass('active') ){}
+            else{
+                $('.video_post.filterType10').addClass('hidden')
+            }
+        }); 
+        $('.dropdown-menu .filterType1').on('click',function(){
+            $('.video_post').removeClass('hidden');
+        }); 
 
 
         /*----------------------------------------------------*/

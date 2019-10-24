@@ -258,6 +258,15 @@ button:hover {
   text-decoration: none;
   transition: all 300ms ease-in-out 0s;
 }
+
+hr {
+  border-top: 1px solid #333;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+}
 /*----------------------------------------------------------------*/
 .title_row {
   padding: 0 15px;
@@ -267,7 +276,7 @@ button:hover {
   border-bottom: 2px solid  #e8ebed;
   position: relative;
   margin-bottom: 25px;
-  margin-top: 0;
+  margin-top: 50px;
   text-transform: capitalize;
   font-weight: bold;
   color: #fff;
@@ -401,7 +410,7 @@ button:hover {
 .navbar {
   margin-bottom: 0;
   border: none;
-  transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;background: #333;
 }
 .navbar .container {
   position: relative;
@@ -584,6 +593,9 @@ button:hover {
 }
 .navbar .container #middle-menu {
   float: left;
+}
+.navbar-fixed-top {
+  animation-duration: 0.4s;
 }
 .navbar.navbar-fixed-top .container {
   /*default menu styles*/
@@ -2094,7 +2106,7 @@ footer.row {
 }
 
 .contact-info {
-  color: #111;
+  color: #fff;
   line-height: 2px;
   font-size: 14px;
   padding-top: 14px;
@@ -2104,6 +2116,8 @@ footer.row {
 .contact-info p {
   margin-top: 0;
   margin-bottom: 1.5rem;
+  font-size: 14px;
+  line-height:3px;
 }
 
 .contact-icon {
@@ -2120,19 +2134,57 @@ footer.row {
 
   .fa-twitter-square {
     font-size:3.2rem;
-    color:#111; 
+    color: #fff; 
     text-rendering: geometricPrecision;
 }
 
 .fa-linkedin {
   font-size:3.2rem;
-  color:#111; 
+  color: #fff; 
   text-rendering: geometricPrecision;
 }
 
 .text-white {
   color:#fff;
 }
+
+.header-container {
+ 
+}
+
+.about-text {
+  font-size: 36px;
+  font-weight: 700;margin-bottom: 1em;
+}
+
+.video-container {
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+  overflow: hidden;margin-top: 80x !important;
+}
+
+.video-container h2 {
+  text-align: center;
+  height: 50vh;
+  transform: translateY(40%);
+  color:#fff;font-weight: 800;
+}
+
+video {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.78;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  top: 90%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+
 
 /*----------------------------------------------------------------*/
 /*# sourceMappingURL=style.css.map */
