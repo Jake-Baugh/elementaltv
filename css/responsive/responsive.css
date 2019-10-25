@@ -156,9 +156,6 @@
     .navbar .container {
         /*default menu styles*/
     }
-    .navbar {
-        padding-left: 20px;
-    }
     .navbar .container .navbar-header .navbar-brand {
         display: inline-block;
         float: none;
@@ -186,13 +183,17 @@
     .navbar .container {
         /*default menu styles*/
     }
-    .navbar {
-        padding-left: 50px;
-    }
     .navbar .container .navbar-header {
         position: relative;
         margin: 0;display: inline-table;
     }
+    .navbar-brand img {
+        width: 200px;
+    }
+    .contact-header {
+        float: right;
+        margin-top: 8px;
+        }
     .navbar .container .navbar-header .navbar-toggle {
         /*display: block;*/
         border-radius: 0;
