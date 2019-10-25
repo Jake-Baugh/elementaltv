@@ -267,6 +267,11 @@ p {
   font-size: 16px;
   line-height: 26px;
 }
+
+.vat-info {
+  font-size: 12px;
+  line-height: 18px;
+}
 /*----------------------------------------------------------------*/
 .title_row {
   padding: 0 15px;
@@ -276,7 +281,7 @@ p {
   border-bottom: 2px solid  #e8ebed;
   position: relative;
   margin-bottom: 25px;
-  margin-top: 50px;
+  margin-top: 30px;
   text-transform: capitalize;
   font-weight: bold;
   color: #fff;
@@ -410,10 +415,10 @@ p {
 .navbar {
   margin-bottom: 0;
   border: none;
-  transition: all 300ms ease-in-out 0s;background: #333;
-}
+  transition: all 300ms ease-in-out 0s;background: #333;position: fixed;
+width: 100%;margin: auto;/* padding-left: 15px; */}
 .navbar .container {
-  position: relative;
+  position: relative;/* padding-left: 0px; *//* margin-left: 0px; */
   /*default menu styles*/
 }
 .navbar .container .navbar-header {
@@ -1374,7 +1379,7 @@ footer.row {
   line-height: 38px;
   height: 40px;
   padding: 0;
-  width: 220px;
+  width: 320px;
 }
 .search_filter .category_filter .btn.dropdown-toggle .filter-option {
   float: left;
@@ -2149,7 +2154,7 @@ footer.row {
 }
 
 .header-container {
- 
+    padding-top: 80px;
 }
 
 .about-text {
@@ -2184,7 +2189,63 @@ video {
   transform: translate(-50%, -50%);
 }
 
+.footer-info{
+  list-style: none;
+  padding: 0 !important;
+  margin: 0;
+  display: grid;
+}
 
+.footer-info li{
+  margin-bottom: 5px;
+  color: #efefef;
+}
+
+.footer-info li a:hover{
+ color: #888;
+}
+
+.news-footer a {
+  color:#fff;
+}
+
+.footer-info a:hover, footer a:hover {
+ -webkit-animation: changeColor 2.4s forwards;
+ animation: changeColor 2.4s forwards;
+}
+
+footer.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem
+}
+
+footer.footer .social-link {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #1d809f;
+  transition: background-color .15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1)
+}
+
+footer.footer .social-link:hover {
+  background-color: #155d74;
+  text-decoration: none
+}
+ 
+.bg-footer {
+  background-image: url("https://weareelemental.uk/img/bg-footer.jpg");
+}
+
+.page-footer {
+    padding-top: 50px;
+}
+
+.watching h3 { 
+  height:80px;
+}
 
 /*----------------------------------------------------------------*/
 /*# sourceMappingURL=style.css.map */

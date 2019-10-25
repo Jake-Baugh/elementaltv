@@ -156,6 +156,9 @@
     .navbar .container {
         /*default menu styles*/
     }
+    .navbar {
+        padding-left: 20px;
+    }
     .navbar .container .navbar-header .navbar-brand {
         display: inline-block;
         float: none;
@@ -182,6 +185,9 @@
 @media (max-width: 767px) {
     .navbar .container {
         /*default menu styles*/
+    }
+    .navbar {
+        padding-left: 50px;
     }
     .navbar .container .navbar-header {
         position: relative;
