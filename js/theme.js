@@ -260,7 +260,7 @@
             }, {
                 breakpoint: 520,
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 2
                 }
             }]
         });
