@@ -4,28 +4,51 @@
     
     $(document).ready(function(){
         
+ 
 
-        $('.customer-logos').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            arrows: false,
-            dots: false,
-                pauseOnHover: false,
-                responsive: [{
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 4
-                }
-            }, {
-                breakpoint: 520,
-                settings: {
-                    slidesToShow: 3
-                }
-            }]
+        /*$(".video_post").click(function(){
+            var vid = $(this).attr("data-vid");
+
+            $(".wistia_embed").hide();
+            $(".wistia_embed.wistia_async_"+vid).show();
+
+            window._wq = window._wq || [];
+    
+            // pause all videos and move time to zero
+            _wq.push({ id: "_all", onReady: function(video) {
+              video.pause();
+              video.time(0);
+            }});  
+
+             // start playing current video
+            _wq.push({ id: vid, onReady: function(video) {
+              //  video.play();
+            }});      
+          
+        });*/
+
+
+        /*// Gets the video src from the data-src on each button
+        var videoSrc;  
+        $('.video_post').click(function() {
+            var $obj = $(this);
+            videoSrc = $obj.data('vid').toString();
         });
-
+        console.log(videoSrc);
+        
+        // when the modal is opened autoplay it  
+        $('#myModal').on('shown.bs.modal', function (e) {
+            
+        // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+        $("#video").attr('src',videoSrc); 
+        })
+        
+        
+        // stop playing the youtube video when I close the modal
+        $('#myModal').on('hide.bs.modal', function (e) {
+            // a poor man's stop video
+            $("#video").attr('src',videoSrc); 
+        }) */
 
         /*----------------------------------------------------*/
         /*  Navigation Scroll
@@ -106,6 +129,8 @@
         /*----------------------------------------------------*/
         /*  Category Filter Dropdown
         /*----------------------------------------------------*/
+
+  
         $('.category_filter .dropdown-menu').find('a').on('click',function(e) {
             e.preventDefault();
             var concept = $(this).find('.filter_text').text();
@@ -117,6 +142,25 @@
                 $('.category_filter .btn').removeClass('active');
             }
         });
+
+        $('.category_filter .dropdown-menu').on('mouseover', function(e) {
+
+            
+            if($('.category_filter').hasClass('open')) {
+                $('.category_filter .dropdown-menu').on();
+                $('.category_filter .dropdown-menu').css('pointer-events', 'auto');
+            }
+            else {
+                $('.category_filter .dropdown-menu').css('pointer-events', 'none');
+            }
+      
+    
+        });
+
+        $('.category_filter').on('click', function(e) {
+            $('.category_filter .dropdown-menu').css('pointer-events', 'auto');
+        });
+
 
         $('.dropdown-menu .filterType2').on('click',function(){
             $('.video_post').removeClass('hidden');
@@ -194,7 +238,30 @@
             autoTrigger: false
         })
         
-    }); 
+    });        
+    
+    if ($('.customer-logos')) {
+        $('.customer-logos').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+        }
     
     /*$(window).on('load', function() { // makes sure the whole site is loaded
 		$('#status').fadeOut(); // will first fade out the loading animation
