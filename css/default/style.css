@@ -891,15 +891,15 @@ width: 100%;margin: auto;/* padding-left: 15px; */}
 }
 .video_post .inner .post_data .category a img,
 .video_post .inner .post_data .views a img {
-  margin-right: 5px;
+  margin-right: 5px;padding-bottom: 4px;
 }
 .video_post .inner .post_data .views a {
   padding: 0;
 }
 .video_post .inner .post_data .post_title {
-  font-size: 20px;
-  display: block;
-  padding-bottom: 15px;height: 85px;
+  font-size: 17px;
+  display: block;/* top: 50%; */
+  padding-bottom: 15px;height: 115px;
 }
 
 .category { 
@@ -965,7 +965,7 @@ width: 100%;margin: auto;/* padding-left: 15px; */}
   position: relative;
 }
 .feature_post .feature_post_inner .feature_img a img {
-  width: auto;
+  /* width: 100%; */
   max-width: 100%;
   border-radius: 0;
 }
@@ -1022,12 +1022,12 @@ width: 100%;margin: auto;/* padding-left: 15px; */}
   overflow: hidden;
 }
 .feature_post_2 .feature_post_inner .feature_img {
-  padding-right: 15px;
+  /* padding: 15px; */
   display: block;
   overflow: hidden;
 }
 .feature_post_2 .feature_post_inner .feature_img a {
-  height: 270px;
+  /* height: 270px; */
 }
 .feature_post_2 .feature_post_inner .feature_body h4 {
   font-size: 30px;
@@ -2151,7 +2151,7 @@ footer.row {
   display: initial;
 }
 
-.fab {
+.navbar .fab {
   padding-left:10px;
 }
 
@@ -2162,6 +2162,12 @@ footer.row {
 }
 
 .fa-linkedin {
+  font-size:3.2rem;
+  color: #fff; 
+  text-rendering: geometricPrecision;
+}
+
+.fa-facebook {
   font-size:3.2rem;
   color: #fff; 
   text-rendering: geometricPrecision;

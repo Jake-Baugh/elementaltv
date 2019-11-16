@@ -1,9 +1,15 @@
 (function($) {
     "use strict";
     
+    var urlparams = new URLSearchParams(window.location.search);
     
     $(document).ready(function(){
         
+        
+        var programme = urlparams.get('programme');
+        $('#' + programme).modal('show');
+
+
         $('.modal').dblclick(function(e) {
             console.log("sd");
             $(this).modal('hide');
@@ -228,6 +234,20 @@
                 $('.video_post.filterType10').addClass('hidden')
             }
         }); 
+        $('.dropdown-menu .filterType11').on('click',function(){
+            $('.video_post').removeClass('hidden');
+            if( $(this).hasClass('active') ){}
+            else{
+                $('.video_post.filterType11').addClass('hidden')
+            }
+        }); 
+        $('.dropdown-menu .filterType12').on('click',function(){
+            $('.video_post').removeClass('hidden');
+            if( $(this).hasClass('active') ){}
+            else{
+                $('.video_post.filterType12').addClass('hidden')
+            }
+        }); 
         $('.dropdown-menu .filterType1').on('click',function(){
             $('.video_post').removeClass('hidden');
         }); 
@@ -273,3 +293,9 @@
     })*/
     
 })(jQuery);
+
+
+function hideAll(show) {
+
+
+}
