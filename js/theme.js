@@ -4,8 +4,11 @@
     
     $(document).ready(function(){
         
- 
-
+        $('.modal').dblclick(function(e) {
+            console.log("sd");
+            $(this).modal('hide');
+        });
+        
         /*$(".video_post").click(function(){
             var vid = $(this).attr("data-vid");
 
