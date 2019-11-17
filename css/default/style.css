@@ -2401,5 +2401,10 @@ footer.footer .social-link:hover {
   background-color: none !important;
 }
 
+.IN-widget {
+  line-height: 0 !important;
+  vertical-align: top !important;
+}
+
 /*----------------------------------------------------------------*/
 /*# sourceMappingURL=style.css.map */
