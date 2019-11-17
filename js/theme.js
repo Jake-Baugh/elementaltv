@@ -318,7 +318,7 @@ function myFunction() {
             
             txtValue = a.textContent || a.innerText;
 
-            if (txtValue.toLowerCase().indexOf(filter) > -1 || txtValue.toLowerCase().indexOf(filter) > -1 || txtValue.toUpperCase().indexOf(filter) > -1) {
+            if (txtValue.indexOf(filter) > -1 || txtValue.toLowerCase().indexOf(filter) > -1 || txtValue.toUpperCase().indexOf(filter) > -1) {
                 li[i].style.display = "block";
        
             }
