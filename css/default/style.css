@@ -902,10 +902,6 @@ width: 100%;margin: auto;/* padding-left: 15px; */}
   padding-bottom: 15px;height: 115px;
 }
 
-.category { 
-  margin-top: 20px;
-}
-
 .title {
   margin-bottom: 20px;
 }
@@ -2196,7 +2192,7 @@ footer.row {
 .video-container h2 {
   text-align: center;
   height: 50vh;
-  transform: translateY(40%);
+  transform: translateY(30%);
   color:#fff;font-weight: 800;
 }
 

@@ -314,7 +314,7 @@ function myFunction() {
         li = $('.video_post');
         for (i = 0; i < li.length; i++) {
             
-            a = li[i].getElementsByClassName("post_title")[0];
+            a = li[i].getElementsByClassName("search-text")[0];
             
             txtValue = a.textContent || a.innerText;
 
