@@ -259,6 +259,14 @@
                 $('.video_post.filterType12').removeClass('hidden')
             }
         }); 
+        $('.dropdown-menu .filterType13').on('click',function(){
+            $('.video_post').addClass('hidden');
+            $('.video_post.filterType13').removeClass('hidden');
+            if( $(this).hasClass('active') ){}
+            else{
+                $('.video_post.filterType13').removeClass('hidden')
+            }
+        }); 
         $('.dropdown-menu .filterType1').on('click',function(){
             $('.video_post').removeClass('hidden');
         }); 

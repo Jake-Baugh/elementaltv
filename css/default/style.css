@@ -899,7 +899,7 @@ width: 100%;margin: auto;/* padding-left: 15px; */}
 .video_post .inner .post_data .post_title {
   font-size: 17px;
   display: block;/* top: 50%; */
-  padding-bottom: 15px;height: 115px;
+  padding-bottom: 15px;height: 120px;
 }
 
 .title {
@@ -1427,7 +1427,7 @@ footer.row {
 .search_filter .category_filter .btn.dropdown-toggle + .dropdown-menu {
   border-radius: 0 0 5px 5px;
   padding: 0;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   border: none;
   width: 100%;
   opacity: 0;
@@ -2386,7 +2386,8 @@ footer.footer .social-link:hover {
 .video_post {
   background: none;
   border: none;
-  text-align: left;max-height: 500px;
+  text-align: left;
+  max-height: 550px;
 }
 
 .w-video-wrapper video {
@@ -2406,6 +2407,24 @@ footer.footer .social-link:hover {
   background: url('../../images/etv_banner.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.ad-text {
+  height: 180px;
+}
+
+.watching li {
+  list-style-position: inside;
+  text-indent: -1em;
+}
+
+@media (max-width: 1200px) {
+  .video_post {
+    height: 500px;
+  }
+  .post_data {
+    height: 250px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2477,6 +2496,10 @@ footer.footer .social-link:hover {
     transform: translateY(30%);
     line-height: 36px;
     }
+
+  .ad-text {
+    height: 200px;
+  }
   
 }
 
@@ -2486,6 +2509,14 @@ footer.footer .social-link:hover {
     background-position: -570px center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .ad-text {
+    height: 230px;
+  }
+
+  .video_post {
+    max-height: 650px;
   }
 
 }
